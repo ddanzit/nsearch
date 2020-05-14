@@ -34,7 +34,7 @@ def plugin_unload():
 
 plugin_info = {
     'version' : '0.0.4.1',
-    'name' : 'nSearch',
+    'name' : 'nSearch_mod',
     'category_name' : 'vod',
     'icon' : '',
     'developer' : 'starbuck',
@@ -59,7 +59,7 @@ menu = {
 #########################################################
 @blueprint.route('/')
 def home():
-    return redirect('/%s/search' % package_name)
+    return redirect('/%s/ratings' % package_name)
 
 @blueprint.route('/<sub>')
 @login_required
